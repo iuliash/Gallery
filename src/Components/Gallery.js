@@ -5,7 +5,6 @@ import i2 from '../img/2.jpg'
 import i3 from '../img/3.jpg'
 import i4 from '../img/4.jpg'
 import i5 from '../img/5.jpg'
-import close from '../img/close.svg'
 
 import Photo from './Photo'
 import IncreasePhoto from './IncreasePhoto'
@@ -35,8 +34,8 @@ class Gallery extends React.Component {
         x = coords;
     }
 
-    closePhoto = id => {
-        console.log(close);
+    closePhoto = () => {
+        this.setState({isIncrease : false});
     }
 
     render(){

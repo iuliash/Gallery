@@ -68,8 +68,8 @@
 }
 
 .increase-photo__img {
-    width: inherit;
-    height: inherit;
+    width: 15vw;
+    height: 20vh;
     object-fit: cover;
 
     transition: all 1s;
@@ -78,5 +78,15 @@
 .img-max {
     width: auto;
     height: 85vh;
+}
+
+.close-img {
+    display: none;
+    position: absolute;
+    height: 3vw;
+    width: 3vw;
+    z-index: 500;
+    margin-top: 2vh;
+    margin-left: 96.5vw;
 }
 
