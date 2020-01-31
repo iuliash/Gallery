@@ -70,7 +70,7 @@
 .increase-photo__img {
     width: 15vw;
     height: 20vh;
-    object-fit: cover;
+    /*object-fit: cover;*/
 
     transition: all 1s;
 }
@@ -89,4 +89,6 @@
     margin-top: 2vh;
     margin-left: 96.5vw;
 }
+
+
 

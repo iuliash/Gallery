@@ -45,7 +45,7 @@ export default class IncreasePhoto extends React.Component{
         setTimeout(()=>{
             this.imgRef.current.className = 'increase-photo__img';
             this.closeRef.current.style.display = 'none';
-            this.boxRef.current.style.backgroundColor = 'none';
+            this.boxRef.current.style.backgroundColor = 'transparent';
         }, 1);
         setTimeout(()=>{
             this.boxRef.current.className = 'increase-photo center'
