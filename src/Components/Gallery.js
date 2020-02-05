@@ -9,7 +9,7 @@ import i5 from '../img/5.jpg'
 import Photo from './Photo'
 import IncreasePhoto from './IncreasePhoto'
 
-let x;
+let x, y;
 
 
 class Gallery extends React.Component {
@@ -29,9 +29,10 @@ class Gallery extends React.Component {
         }
     }
 
-    increasePhoto = (id, coords) => {
+    increasePhoto = (id, coordsX, coordsY) => {
         this.setState({isIncrease : true, firstPhoto : id});
-        x = coords;
+        x = coordsX;
+        y = coordsY;
     }
 
     closePhoto = () => {
@@ -42,12 +43,13 @@ class Gallery extends React.Component {
         const photos = this.state.photos;
         const isIncrease = this.state.isIncrease;
         return(
-            <div>
+            <div styles="position: absolute">
                 {isIncrease && <IncreasePhoto 
                     photos={photos}
                     firstPhoto={this.state.firstPhoto}
                     close={this.closePhoto}
-                    coord = {x}
+                    coordX = {x}
+                    coordY = {y}
                 />}
                 <div className='gallery'>
                     {photos.map(photo => (

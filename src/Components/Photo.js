@@ -1,7 +1,5 @@
 import React from 'react'
 
-import IncreasePhoto from './IncreasePhoto'
-
 export default function Photo(props){
     return(
         <div className='photo'>
@@ -9,7 +7,7 @@ export default function Photo(props){
             id={'i' + props.photo.id}
             className='photo__img' 
             src={props.photo.img}
-            onClick={e => {props.click(props.photo.id, e.clientX)}}
+            onClick={e => {props.click(props.photo.id, e.clientX, e.clientY)}}
         />
         </div>
     )
